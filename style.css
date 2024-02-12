@@ -1,0 +1,84 @@
+
+@font-face  {
+    font-family: 'poppins';
+    src: url('res/fonts/Poppins-Regular.ttf');
+}
+
+:root {
+    --white: rgb(255, 248, 240);
+    --cyan: rgb(157, 217, 210);
+    --bright-yellow: rgb(244, 208, 111);
+    --dark-blue: rgb(57, 47, 90);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+
+body, .main{
+    min-height: 100dvh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    padding: 0.5em 10dvw;
+    height: 4em;
+    position: sticky;
+    background: var(--dark-blue);
+    top: 0;
+    color: white;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.navform {
+    display: flex;
+    align-items: center;
+}
+.navform input {
+    border: none;
+    outline: none;
+    background: none;
+}
+.navform input[type="text"] {
+    border-bottom: 1px solid black;
+}
+
+
+.btn {
+    padding: 0.25em 1em;
+    border: none;
+    text-decoration: none;
+    color: black;
+    background: none;
+}
+.navbtn {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+
+/*
+
+157, 217, 210 cyanish
+244, 208, 111 bright yellow
+57, 47, 90
+255, 248, 240
+255, 136, 17
+
+*/
